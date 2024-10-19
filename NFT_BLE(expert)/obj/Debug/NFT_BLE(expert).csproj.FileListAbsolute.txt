@@ -1,0 +1,296 @@
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojResolveAssemblyReference.cache
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+D:\NCBCI\軟體\NFT_BLE(expert)\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert) - 宜鈺改\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\USER\Desktop\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\HAN\Desktop\4CH_GUI\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csprojAssemblyReference.cache
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.feedback.resources
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+C:\Users\HAN\Desktop\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.AssemblyReference.cache
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.feedback.resources
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+Z:\110碩\博涵\桌球腦波相關\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.AssemblyReference.cache
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.SuggestedBindingRedirects.cache
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.feedback.resources
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+D:\桌面\4ch_NFT(含Gopro)\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.AssemblyReference.cache
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.SuggestedBindingRedirects.cache
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.feedback.resources
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+D:\桌面\EEG\4ch_NFT(含Gopro) - 複製\4ch_NFT(含Gopro)\原始碼\eeg_4ch_NFT\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe.config
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).exe
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\NFT_BLE(expert).pdb
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.dll
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.dll
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.dll
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MaterialSkin.dll
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.dll
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.pdb
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.xml
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.pdb
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.WinForms.xml
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.pdb
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\LiveCharts.Wpf.xml
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\bin\Debug\MathNet.Numerics.xml
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.AssemblyReference.cache
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.SuggestedBindingRedirects.cache
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.feedback.resources
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Properties.Resources.resources
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.Signalform.resources
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE_expert_.User_form.resources
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.GenerateResource.cache
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CoreCompileInputs.cache
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).csproj.CopyComplete
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).exe
+D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\NFT_BLE(expert)\obj\Debug\NFT_BLE(expert).pdb
