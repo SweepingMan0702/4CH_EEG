@@ -406,10 +406,11 @@ namespace NFT_BLE_expert_
         public Boolean OpenStatus
         {
             set
+            //true or false
             {
                 if (value == true)
                 {
-                    strRawdatafile = Path.Combine(@"D:\桌面\NFT_BLE(expert)_4CH分開_0713newfilter\rawdata\", string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff")));
+                    strRawdatafile = Path.Combine(@"D:\桌面\4CH_EEG\raw_data\", string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff")));
                     //strRawdatafile = string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff"));
                     Rawdatafile = new StreamWriter(strRawdatafile, true);
                     filestatus = true;
@@ -839,8 +840,9 @@ namespace NFT_BLE_expert_
                         {
                             for (int i = 0; i < ReadBuffer.Length; i++)
                             {
+                                ////////////////////////////////////////////////////////////////////////////
                                 Rawdatafile.WriteLine(ReadBuffer[i]);
-                                // Console.WriteLine(ReadBuffer[i]);
+                                Console.WriteLine(ReadBuffer[i]);
                             }
                         }
                     }
