@@ -406,12 +406,10 @@ namespace NFT_BLE_expert_
         public Boolean OpenStatus
         {
             set
-            //true or false
             {
                 if (value == true)
                 {
-                    strRawdatafile = Path.Combine(@"D:\桌面\4CH_EEG\raw_data\", string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff")));
-                    //strRawdatafile = string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff"));
+                    strRawdatafile = string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff"));
                     Rawdatafile = new StreamWriter(strRawdatafile, true);
                     filestatus = true;
                 }
@@ -540,6 +538,8 @@ namespace NFT_BLE_expert_
                     chart2.Series[0].Points.AddXY(pointIndex, newY2 * 1000000);
                     chart3.Series[0].Points.AddXY(pointIndex, newY3 * 1000000);
                     chart4.Series[0].Points.AddXY(pointIndex, newY4 * 1000000);
+
+
                     // Adjust Y & X axis scale
                     chart1.ResetAutoValues();
                     if (chart1.ChartAreas["Default"].AxisX.Maximum < pointIndex)
@@ -840,10 +840,10 @@ namespace NFT_BLE_expert_
                         {
                             for (int i = 0; i < ReadBuffer.Length; i++)
                             {
-                                ////////////////////////////////////////////////////////////////////////////
                                 Rawdatafile.WriteLine(ReadBuffer[i]);
-                                Console.WriteLine(ReadBuffer[i]);
+                                // Console.WriteLine(ReadBuffer[i]);
                             }
+
                         }
                     }
 
@@ -906,6 +906,34 @@ namespace NFT_BLE_expert_
 
                                 FFT_CH1 = PlotFFT(NFTcal_ch1);
                                 FFT_CH2 = PlotFFT(NFTcal_ch2);
+                     
+
+                                //// 設定檔案名稱，取得桌面路徑
+                                //string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                                //string folderName = "HOYI";
+                                //string folderPath = Path.Combine(desktopPath, folderName);
+
+                                //if (!Directory.Exists(folderPath))
+                                //{
+                                //    Directory.CreateDirectory(folderPath);
+                                //}
+
+                                //string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
+                                //string filePath = Path.Combine(folderPath, fileName);
+
+                                //if (!Directory.Exists(folderPath))
+                                //{
+                                //    Directory.CreateDirectory(folderPath);
+                                //}
+
+                                //// 打開文件並寫入接收到的數據
+                                //using (StreamWriter writer = new StreamWriter(filePath, true))
+                                //{
+                                //    for (int i = 0; i < FFT_CH1.Length; i++)
+                                //    {
+                                //        writer.WriteLine(FFT_CH1[i]);
+                                //    }
+                                //}
 
                                 frequency_chart.Series[0].Values.Clear();
                                 frequency_chart.Series[1].Values.Clear();
@@ -923,10 +951,109 @@ namespace NFT_BLE_expert_
 
                                 NFTpoint_count = NFTpoint_count - 250;
 
+                                ////// 設定檔案名稱，取得桌面路徑
+                                //string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                                //string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
+                                //string filePath = Path.Combine(desktopPath, fileName);
+
+                                //// 打開文件並寫入接收到的數據
+                                //using (StreamWriter writer = new StreamWriter(filePath, true))
+                                //{
+                                //    for (int i = 0; i < FFT_CH1.Length; i++)
+                                //    {
+                                //        writer.WriteLine(FFT_CH1[i]);
+                                //    }
+                                //}
+                                                                                                   
                                 if (filestatus == true)
                                 {
+                                    // 設定檔案名稱，取得桌面路徑
+                                    string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                                    string folderName1 = "immediate_data/CH1";
+                                    string folderPath1 = Path.Combine(desktopPath, folderName1);
+
+                                    if (!Directory.Exists(folderPath1))
+                                    {
+                                        Directory.CreateDirectory(folderPath1);
+                                    }
+
+                                    string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
+                                    string filePath1 = Path.Combine(folderPath1, fileName);
+
+                                    if (!Directory.Exists(folderPath1))
+                                    {
+                                        Directory.CreateDirectory(folderPath1);
+                                    }
+
+                                    // 打開文件並寫入接收到的數據
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true))
+                                    {
+                                        for (int i = 0; i < FFT_CH1.Length; i++)
+                                        {
+                                            writer.WriteLine(FFT_CH1[i] * 1000000);
+                                            Console.WriteLine(FFT_CH1[i] * 1000000);
+                                        }
+                                    }
+
+                                    ///////////////////////////////////////////////////////////////////
+                                    string folderName2 = "immediate_data/CH2";
+                                    string folderPath2 = Path.Combine(desktopPath, folderName2);
+
+                                    if (!Directory.Exists(folderPath2))
+                                    {
+                                        Directory.CreateDirectory(folderPath2);
+                                    }
+
+                                    string filePath2 = Path.Combine(folderPath2, fileName);
+
+                                    if (!Directory.Exists(folderPath2))
+                                    {
+                                        Directory.CreateDirectory(folderPath2);
+                                    }
+
+                                    // 打開文件並寫入接收到的數據
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true))
+                                    {
+                                        for (int ii = 0; ii < FFT_CH2.Length; ii++)
+                                        {
+                                            writer.WriteLine(FFT_CH2[ii] * 1000000);
+                                            Console.WriteLine(FFT_CH2[ii] * 1000000);
+                                        }
+                                    }
+                                    /////////////////////////////////////////////////////////////////
+                                    
+                                    ///////////////////////////////////////////////////////////////////
+                                    //string folderName3 = "immediate_data/CH3";
+                                    //string folderPath3 = Path.Combine(desktopPath, folderName3);
+
+                                    //if (!Directory.Exists(folderPath3))
+                                    //{
+                                    //    Directory.CreateDirectory(folderPath3);
+                                    //}
+
+                                    //string filePath3 = Path.Combine(folderPath3, fileName);
+
+                                    //if (!Directory.Exists(folderPath3))
+                                    //{
+                                    //    Directory.CreateDirectory(folderPath3);
+                                    //}
+
+                                    //// 打開文件並寫入接收到的數據
+                                    //using (StreamWriter writer = new StreamWriter(filePath3, true))
+                                    //{
+                                    //    for (int iii = 0; iii < FFT_CH3.Length; iii++)
+                                    //    {
+                                    //        writer.WriteLine(FFT_CH3[iii] * 1000000);
+                                    //        Console.WriteLine(FFT_CH3[iii] * 1000000);
+                                    //    }
+                                    //}
+                                    /////////////////////////////////////////////////////////////////
+
+
                                     for (int i = 0; i < 250; i++)
                                     {
+                          
+
                                         if (NFTcal_ch1[i] * 1000000 > 70 || NFTcal_ch2[i] * 1000000 > 70 || NFTcal_ch1[i] * 1000000 < (-70) || NFTcal_ch2[i] * 1000000 < (-70))
                                         {
                                             eyeblinking = false;
@@ -1326,6 +1453,7 @@ namespace NFT_BLE_expert_
             Complex[] samples = new Complex[250];
             for (int i = 0; i < numsample; i++)
             {
+                //Console.WriteLine(data[i] * 1000000);
                 samples[i] = new Complex(data[i], 0);
                 // samples[i] = new Complex(fnudmental[i]+second[i], 0);
             }
@@ -1343,7 +1471,8 @@ namespace NFT_BLE_expert_
                     REALTEMP = Math.Sqrt((float)REALTEMP);
                     double ImaginaryTEMP = (float)Math.Pow(samples[i].Imaginary, 2);
                     msg[i] = ((2.0 / numsample) * (Math.Abs(REALTEMP + ImaginaryTEMP)));*/
-                    msg[i] = (2.0 / numsample) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) + Math.Pow(samples[i].Imaginary, 2))));
+                    msg[i] = (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) + Math.Pow(samples[i].Imaginary, 2))));
+                    //Console.WriteLine(samples[i]);
                 }
                 catch (Exception e)
                 {
@@ -1417,6 +1546,22 @@ namespace NFT_BLE_expert_
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             OpenStatus = true;
+            // trigger gopro
+            string gopro_start = "http://10.5.5.9/gp/gpControl/command/shutter?p=1";
+            HttpWebRequest request = HttpWebRequest.Create(gopro_start) as HttpWebRequest;
+            request.Method = "GET";
+            request.Timeout = 3000;
+            request.ContentType = "application/json";
+            request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36";
+            string result = "";
+            //using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
+            //{
+            //    using (StreamReader sr = new StreamReader(response.GetResponseStream()))
+            //    {
+            //        result = sr.ReadToEnd();
+            //    }
+            //}
+            //Console.WriteLine(result);
             label_FileStatus.Text = "紀錄中...";
             train_time = int.Parse(textBox1.Text);
             feedback_form.clear_line();
@@ -1479,19 +1624,35 @@ namespace NFT_BLE_expert_
 
         private void update_time()
         {
-            if (system_time >= train_time)
+            if(system_time >= train_time)
             {
                 OpenStatus = false;
+                // trigger gopro
+                string gopro_start = "http://10.5.5.9/gp/gpControl/command/shutter?p=0";
+                HttpWebRequest request = HttpWebRequest.Create(gopro_start) as HttpWebRequest;
+                request.Method = "GET";
+                request.ContentType = "application/json";
+                request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36";
+                request.Timeout = 3000;
+                string result = "";
+                using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
+                {
+                    using (StreamReader sr = new StreamReader(response.GetResponseStream()))
+                    {
+                        result = sr.ReadToEnd();
+                    }
+                }
+                Console.WriteLine(result);
                 system_time = 0;
                 feedback_form.update_time_lab(system_time);
                 update_status("訓練結束，待機中");
-                if (error_times + blink_times >= (train_time / 3))
+                if (error_times+blink_times >= (train_time / 3))
                 {
                     MessageBox.Show("訊號異常，訓練失敗，請再訓練一次");
                 }
                 else
                 {
-                    MessageBox.Show("該次訓練分數為：" + (total_score / (train_time - error_times - blink_times)).ToString());
+                    MessageBox.Show("該次訓練分數為：" + (total_score/(train_time-error_times-blink_times)).ToString());
                 }
                 error_times = 0;
                 blink_times = 0;
