@@ -64,14 +64,23 @@ namespace NFT_BLE_expert_
         private bool resultstatus = false;
 
         private bool baseline_btn = false;
-        private double base_alpha;
-        private double base_theta;
-        private double base_gamma1;
-        private double base_gamma2;
-        private double base_gamma3;
-        private double base_gamma4;
-        private double base_gamma5;
-        private double base_gamma6;
+        private double CH1_base_alpha;
+        private double CH1_base_theta;
+        private double CH1_base_gamma1;
+        private double CH1_base_gamma2;
+        private double CH1_base_gamma3;
+        private double CH1_base_gamma4;
+        private double CH1_base_gamma5;
+        private double CH1_base_gamma6;
+
+        private double CH2_base_alpha;
+        private double CH2_base_theta;
+        private double CH2_base_gamma1;
+        private double CH2_base_gamma2;
+        private double CH2_base_gamma3;
+        private double CH2_base_gamma4;
+        private double CH2_base_gamma5;
+        private double CH2_base_gamma6;
 
 
 
@@ -917,34 +926,6 @@ namespace NFT_BLE_expert_
                                 FFT_CH1 = PlotFFT(NFTcal_ch1);
                                 FFT_CH2 = PlotFFT(NFTcal_ch2);
                      
-
-                                //// 設定檔案名稱，取得桌面路徑
-                                //string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                                //string folderName = "HOYI";
-                                //string folderPath = Path.Combine(desktopPath, folderName);
-
-                                //if (!Directory.Exists(folderPath))
-                                //{
-                                //    Directory.CreateDirectory(folderPath);
-                                //}
-
-                                //string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
-                                //string filePath = Path.Combine(folderPath, fileName);
-
-                                //if (!Directory.Exists(folderPath))
-                                //{
-                                //    Directory.CreateDirectory(folderPath);
-                                //}
-
-                                //// 打開文件並寫入接收到的數據
-                                //using (StreamWriter writer = new StreamWriter(filePath, true))
-                                //{
-                                //    for (int i = 0; i < FFT_CH1.Length; i++)
-                                //    {
-                                //        writer.WriteLine(FFT_CH1[i]);
-                                //    }
-                                //}
-
                                 frequency_chart.Series[0].Values.Clear();
                                 frequency_chart.Series[1].Values.Clear();
                                 frequency_chart.Series[0].Values.Add(0.0);
@@ -961,24 +942,12 @@ namespace NFT_BLE_expert_
 
                                 NFTpoint_count = NFTpoint_count - 250;
 
-                                ////// 設定檔案名稱，取得桌面路徑
-                                //string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                                //string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
-                                //string filePath = Path.Combine(desktopPath, fileName);
-
-                                //// 打開文件並寫入接收到的數據
-                                //using (StreamWriter writer = new StreamWriter(filePath, true))
-                                //{
-                                //    for (int i = 0; i < FFT_CH1.Length; i++)
-                                //    {
-                                //        writer.WriteLine(FFT_CH1[i]);
-                                //    }
-                                //}
-                                if (baseline_btn == true) 
+                                if (baseline_btn == true)
                                 {
-                                    // 設定檔案名稱，取得桌面路徑
+                                    int over_counts = 0;
+                                    // 設定檔案名稱，取得桌面路徑 ////baseline_CH1紀錄
                                     string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                                    string folderName1 = "immediate_data/baseline";
+                                    string folderName1 = "immediate_data/baseline/CH1";
                                     string folderPath1 = Path.Combine(desktopPath, folderName1);
 
                                     if (!Directory.Exists(folderPath1))
@@ -989,21 +958,48 @@ namespace NFT_BLE_expert_
                                     string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
                                     string filePath1 = Path.Combine(folderPath1, fileName);
 
-                                    if (!Directory.Exists(folderPath1))
+                                    //baseline 體動
+                                    for (int i = 0; i < FFT_CH1.Length; i++)
                                     {
-                                        Directory.CreateDirectory(folderPath1);
+                                        if (FFT_CH1[i] > 250) { over_counts += 1 }
                                     }
 
                                     // 打開文件並寫入接收到的數據
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true))
-                                    {
-                                        for (int i = 0; i < FFT_CH1.Length; i++)
+                                    if (over_counts <= 20) {
+                                        using (StreamWriter writer = new StreamWriter(filePath1, true))
                                         {
-                                            writer.WriteLine(FFT_CH1[i] * 1000000);
-                                            //Console.WriteLine(FFT_CH1[i] * 1000000);
-                                        }   
+                                            for (int i = 0; i < FFT_CH1.Length; i++)
+                                            {
+                                                writer.WriteLine(FFT_CH1[i] * 1000000);
+                                            }
+                                        }
+                                    }
+
+                                    ////baseline_CH2紀錄
+                                    string folderName2 = "immediate_data/baseline/CH2";
+                                    string folderPath2 = Path.Combine(desktopPath, folderName2);
+                                    string filePath2 = Path.Combine(folderPath2, fileName);
+                                    over_counts = 0;
+
+                                    if (!Directory.Exists(folderPath2)){Directory.CreateDirectory(folderPath2);}
+
+                                    //baseline 體動
+                                    for (int i = 0; i < FFT_CH2.Length; i++){if (FFT_CH2[i] > 250) { over_counts += 1 }}
+
+                                    if (over_counts <= 20) 
+                                    {
+                                        // 打開文件並寫入接收到的數據
+                                        using (StreamWriter writer = new StreamWriter(filePath2, true))
+                                        {
+                                            for (int i = 0; i < FFT_CH2.Length; i++)
+                                            {
+                                                writer.WriteLine(FFT_CH2[i] * 1000000);
+                                            }
+                                        }
                                     }
                                 }
+
+                                /////////////////////////////////////////
                                 /////////////////////////////////////////
                                 if (filestatus == true & baseline_btn == false)
                                 {
@@ -1019,34 +1015,31 @@ namespace NFT_BLE_expert_
 
                                     string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
                                     string filePath1 = Path.Combine(folderPath1, fileName);
-                                    double tempvalue = 0.0;
+                                    double temp_value = 0.0;
 
                                     if (!Directory.Exists(folderPath1))
                                     {
                                         Directory.CreateDirectory(folderPath1);
                                     }
 
-                                    // 打開文件並寫入接收到的數據
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true))
-                                    {
-                                        // 計算索引10到20的總和
-                                        double sum = 0;
-                                        for (int i = 4; i <= 7; i++)
-                                        {
-                                            sum += FFT_CH1[i];
-                                        }
+                                    temp_value = getFeatures( FFT_CH1, 8, 12, CH1_base_alpha);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 4, 7, CH1_base_theta);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 31, 40, CH1_base_gamma1);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 41, 50, CH1_base_gamma2);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 51, 58, CH1_base_gamma3);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 61, 70, CH1_base_gamma4);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 71, 80, CH1_base_gamma5);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures( FFT_CH1, 81, 90, CH1_base_gamma6);
+                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = 0.0;
 
-                                        // 計算平均值
-                                        double average = sum / 11; // 因為是從10到20共11個數值
-
-                                        // 將平均值除以x (請替換x為實際的值)
-                                        double x = 1.0; // 請替換為您需要的x值
-                                        double result = average / x;
-
-                                        // 寫入結果到文件(乘以1000000保持原有的放大倍率)
-                                        writer.WriteLine(result * 1000000);
-                                    }
-                                    //////////////////////////////
 
                                     ///////////////////////////////////////////////////////////////////
                                     string folderName2 = "immediate_data/CH2";
@@ -1064,40 +1057,33 @@ namespace NFT_BLE_expert_
                                         Directory.CreateDirectory(folderPath2);
                                     }
 
+                                    temp_value = getFeatures(FFT_CH2, 8, 12, CH2_base_alpha);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 4, 7, CH2_base_theta);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 31, 40, CH2_base_gamma1);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 41, 50, CH2_base_gamma2);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 51, 58, CH2_base_gamma3);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 61, 70, CH2_base_gamma4);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 71, 80, CH2_base_gamma5);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 81, 90, CH2_base_gamma6);
+                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = 0.0;
+
+
+
                                     // 打開文件並寫入接收到的數據
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true))
-                                    {
-                                        for (int ii = 0; ii < FFT_CH2.Length; ii++)
-                                        {
-                                            writer.WriteLine(FFT_CH2[ii] * 1000000);
-                                            //Console.WriteLine(FFT_CH2[ii] * 1000000);
-                                        }
-                                    }
-                                    /////////////////////////////////////////////////////////////////
-
-                                    ///////////////////////////////////////////////////////////////////
-                                    //string folderName3 = "immediate_data/CH3";
-                                    //string folderPath3 = Path.Combine(desktopPath, folderName3);
-
-                                    //if (!Directory.Exists(folderPath3))
+                                    //using (StreamWriter writer = new StreamWriter(filePath2, true))
                                     //{
-                                    //    Directory.CreateDirectory(folderPath3);
-                                    //}
-
-                                    //string filePath3 = Path.Combine(folderPath3, fileName);
-
-                                    //if (!Directory.Exists(folderPath3))
-                                    //{
-                                    //    Directory.CreateDirectory(folderPath3);
-                                    //}
-
-                                    //// 打開文件並寫入接收到的數據
-                                    //using (StreamWriter writer = new StreamWriter(filePath3, true))
-                                    //{
-                                    //    for (int iii = 0; iii < FFT_CH3.Length; iii++)
+                                    //    for (int ii = 0; ii < FFT_CH2.Length; ii++)
                                     //    {
-                                    //        writer.WriteLine(FFT_CH3[iii] * 1000000);
-                                    //        Console.WriteLine(FFT_CH3[iii] * 1000000);
+                                    //        writer.WriteLine(FFT_CH2[ii] * 1000000);
+                                    //        //Console.WriteLine(FFT_CH2[ii] * 1000000);
                                     //    }
                                     //}
                                     /////////////////////////////////////////////////////////////////
@@ -1604,14 +1590,24 @@ namespace NFT_BLE_expert_
             ///////baseline確保開關
             baseline_btn = false;
             ///////baseline特徵擷取
-            double base_alpha = CalculateAverage("CH1",8, 12);
-            double base_theta = CalculateAverage("CH1", 4, 7);
-            double base_gamma1 = CalculateAverage("CH1", 31, 40);
-            double base_gamma2 = CalculateAverage("CH1", 41, 50);
-            double base_gamma3 = CalculateAverage("CH1", 51, 58);
-            double base_gamma4 = CalculateAverage("CH1", 61, 70);
-            double base_gamma5 = CalculateAverage("CH1", 71, 80);
-            double base_gamma6 = CalculateAverage("CH1", 81, 90);
+            CH1_base_alpha = baselineAverage("CH1",8, 12);
+            CH1_base_theta = baselineAverage("CH1", 4, 7);
+            CH1_base_gamma1 = baselineAverage("CH1", 31, 40);
+            CH1_base_gamma2 = baselineAverage("CH1", 41, 50);
+            CH1_base_gamma3 = baselineAverage("CH1", 51, 58);
+            CH1_base_gamma4 = baselineAverage("CH1", 61, 70);
+            CH1_base_gamma5 = baselineAverage("CH1", 71, 80);
+            CH1_base_gamma6 = baselineAverage("CH1", 81, 90);
+
+            CH2_base_alpha = baselineAverage("CH2", 8, 12);
+            CH2_base_theta = baselineAverage("CH2", 4, 7);
+            CH2_base_gamma1 = baselineAverage("CH2", 31, 40);
+            CH2_base_gamma2 = baselineAverage("CH2", 41, 50);
+            CH2_base_gamma3 = baselineAverage("CH2", 51, 58);
+            CH2_base_gamma4 = baselineAverage("CH2", 61, 70);
+            CH2_base_gamma5 = baselineAverage("CH2", 71, 80);
+            CH2_base_gamma6 = baselineAverage("CH2", 81, 90);
+            //////////////////////////////////////////////////////
 
 
             // trigger gopro
@@ -1685,7 +1681,7 @@ namespace NFT_BLE_expert_
 
         private void update_progress()
         {
-            Console.WriteLine(score);
+            //Console.WriteLine(score);
             //progressBar1.Value = (int)score;
             feedback_form.update_bar((int)score);
             feedback_form.update_line((int)score, system_time);
@@ -1711,7 +1707,7 @@ namespace NFT_BLE_expert_
                         result = sr.ReadToEnd();
                     }
                 }
-                Console.WriteLine(result);
+                //Console.WriteLine(result);
                 system_time = 0;
                 feedback_form.update_time_lab(system_time);
                 update_status("訓練結束，待機中");
@@ -1750,10 +1746,12 @@ namespace NFT_BLE_expert_
         }
 
         //////////////////////////////////////////////////////////////////////////////////
+        ///計算baseline
 
-        public static double CalculateAverage(string base_CH,int startLine, int endLine)
+        public static double baselineAverage(string base_CH,int startLine, int endLine)
         {
-            string folderPath = @"D:\桌面\immediate_data\" + base_CH; ;
+            //改路徑
+            string folderPath = @"D:\桌面\immediate_data\baseline\" + base_CH; ;
             // 調整為索引值（因為陣列索引從0開始）
             int startIndex = startLine - 1;
             int endIndex = endLine - 1;
@@ -1763,14 +1761,14 @@ namespace NFT_BLE_expert_
             List<double> fileAverages = new List<double>(); // 儲存每個檔案的平均值
 
             // 檢查檔案總數
-            if (files.Length < 25)
+            if (files.Length < 300)
             {
                 // 當檔案數小於25時，直接回傳1
                 return 1.0;
             }
-
-            // 只處理第5到第15個檔案
-            for (int fileIndex = 4; fileIndex <= 14; fileIndex++) // 因為索引從0開始，所以是4到14
+            //////////這裡要改
+            // 只處理第60到第240個檔案
+            for (int fileIndex = 11; fileIndex <= 290; fileIndex++)
             {
                 string file = files[fileIndex];
 
@@ -1805,6 +1803,28 @@ namespace NFT_BLE_expert_
             // 計算並回傳所有檔案平均值的平均
             return fileAverages.Count > 0 ? fileAverages.Average() : 0;
         }
-    ////////////////////////////////////////////////////////////////////
-}
+
+
+        //特徵擷取
+        public double getFeatures(double[] data, int startIndex, int endIndex, double divider)
+        {
+            // 計算指定範圍的總和
+            double sum = 0;
+            int count = endIndex - startIndex + 1;
+
+            for (int i = startIndex; i <= endIndex; i++)
+            {
+                sum += data[i];
+            }
+
+            // 計算平均值
+            double average = sum / count;
+
+            // 計算最終結果
+            double result = (average * 1000000) / divider;
+            //Console.WriteLine($"Start Index: {startIndex}, End Index: {endIndex}, Result: {result}");
+            return result;
+        }
+        ////////////////////////////////////////////////////////////////////
+    }
 }
