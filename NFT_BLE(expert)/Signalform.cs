@@ -62,10 +62,8 @@ namespace NFT_BLE_expert_
         private bool filestatus = false;
         private bool Openfilestatus = false;
         private bool resultstatus = false;
-
         private bool baseline_btn = false;
-        private double CH1_base_alpha;
-        private double CH1_base_theta;
+        //頻帶資料
         private double CH1_base_gamma1;
         private double CH1_base_gamma2;
         private double CH1_base_gamma3;
@@ -73,14 +71,17 @@ namespace NFT_BLE_expert_
         private double CH1_base_gamma5;
         private double CH1_base_gamma6;
 
-        private double CH2_base_alpha;
-        private double CH2_base_theta;
         private double CH2_base_gamma1;
         private double CH2_base_gamma2;
         private double CH2_base_gamma3;
         private double CH2_base_gamma4;
         private double CH2_base_gamma5;
         private double CH2_base_gamma6;
+
+        private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        private string folderName = "immediate_data/data";
+        private string folderPath;
+        private string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
 
 
 
@@ -432,13 +433,12 @@ namespace NFT_BLE_expert_
                     Rawdatafile = new StreamWriter(strRawdatafile, true);
                     filestatus = true;
                 }
-                else if (value == false)
+                else if (value == true)
                 {
-                    label_FileStatus.Text = "紀錄完成！可進行下一次紀錄...";
-                    Rawdatafile.Close();
-                    filestatus = false;
+                    strRawdatafile = string.Format("Rawdatafile_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmssfff"));
+                    Rawdatafile = new StreamWriter(strRawdatafile, true);
+                    filestatus = true;
                 }
-
             }
         }
 
@@ -835,6 +835,8 @@ namespace NFT_BLE_expert_
         {
 
             float[,] Voltage = new float[Channel, Datapoint];
+
+
             while (true)
             {
                 if (getstatus == true)
@@ -923,8 +925,8 @@ namespace NFT_BLE_expert_
                                 Buffer.BlockCopy(NFTBuffer_ch1, 0, NFTcal_ch1, 0, 4 * 250); // float  = 4 byte
                                 Buffer.BlockCopy(NFTBuffer_ch2, 0, NFTcal_ch2, 0, 4 * 250); // float  = 4 byte 
 
-                                FFT_CH1 = PlotFFT(NFTcal_ch1);
-                                FFT_CH2 = PlotFFT(NFTcal_ch2);
+                                FFT_CH1 = ComputeFFT(NFTcal_ch1,256);
+                                FFT_CH2 = ComputeFFT(NFTcal_ch2,256);
                      
                                 frequency_chart.Series[0].Values.Clear();
                                 frequency_chart.Series[1].Values.Clear();
@@ -945,8 +947,7 @@ namespace NFT_BLE_expert_
                                 if (baseline_btn == true)
                                 {
                                     int over_counts = 0;
-                                    // 設定檔案名稱，取得桌面路徑 ////baseline_CH1紀錄
-                                    string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                                    // 設定檔案名稱，取得桌面路徑 //baseline_CH1紀錄
                                     string folderName1 = "immediate_data/baseline/CH1";
                                     string folderPath1 = Path.Combine(desktopPath, folderName1);
 
@@ -961,7 +962,7 @@ namespace NFT_BLE_expert_
                                     //baseline 體動
                                     for (int i = 0; i < FFT_CH1.Length; i++)
                                     {
-                                        if (FFT_CH1[i] > 250) { over_counts += 1 }
+                                        if (FFT_CH1[i] > 250) { over_counts += 1; }
                                     }
 
                                     // 打開文件並寫入接收到的數據
@@ -984,7 +985,7 @@ namespace NFT_BLE_expert_
                                     if (!Directory.Exists(folderPath2)){Directory.CreateDirectory(folderPath2);}
 
                                     //baseline 體動
-                                    for (int i = 0; i < FFT_CH2.Length; i++){if (FFT_CH2[i] > 250) { over_counts += 1 }}
+                                    for (int i = 0; i < FFT_CH2.Length; i++){if (FFT_CH2[i] > 250) { over_counts += 1; }}
 
                                     if (over_counts <= 20) 
                                     {
@@ -1000,44 +1001,49 @@ namespace NFT_BLE_expert_
                                 }
 
                                 /////////////////////////////////////////
-                                /////////////////////////////////////////
+                                /////////////////////////////////////////即時資料紀錄
                                 if (filestatus == true & baseline_btn == false)
                                 {
                                     // 設定檔案名稱，取得桌面路徑
-                                    string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                                    string folderName1 = "immediate_data/CH1";
-                                    string folderPath1 = Path.Combine(desktopPath, folderName1);
+                                    folderPath = Path.Combine(desktopPath, folderName);
 
-                                    if (!Directory.Exists(folderPath1))
+                                    if (!Directory.Exists(folderPath))
                                     {
-                                        Directory.CreateDirectory(folderPath1);
+                                        Directory.CreateDirectory(folderPath);
                                     }
 
-                                    string fileName = "FFT_Data_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
-                                    string filePath1 = Path.Combine(folderPath1, fileName);
+
+                                    
+
+                                    string filePath = Path.Combine(folderPath, fileName);
                                     double temp_value = 0.0;
 
-                                    if (!Directory.Exists(folderPath1))
+                                    if (!Directory.Exists(folderPath))
                                     {
-                                        Directory.CreateDirectory(folderPath1);
+                                        Directory.CreateDirectory(folderPath);
                                     }
 
-                                    temp_value = getFeatures( FFT_CH1, 8, 12, CH1_base_alpha);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 4, 7, CH1_base_theta);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 31, 40, CH1_base_gamma1);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 41, 50, CH1_base_gamma2);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 51, 58, CH1_base_gamma3);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 61, 70, CH1_base_gamma4);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 71, 80, CH1_base_gamma5);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures( FFT_CH1, 81, 90, CH1_base_gamma6);
-                                    using (StreamWriter writer = new StreamWriter(filePath1, true)) { writer.WriteLine(temp_value); }
+                                    // 只在檔案不存在時才寫入標題行
+                                    if (!File.Exists(filePath))
+                                    {
+                                        using (StreamWriter writer = new StreamWriter(filePath, true))
+                                        {
+                                            writer.WriteLine("gamma1_cz,gamma2_cz,gamma3_cz,gamma4_cz,gamma5_cz,gamma6_cz,gamma1_fz,gamma2_fz,gamma3_fz,gamma4_fz,gamma5_fz,gamma6_fz");
+                                        }
+                                    }
+
+                                    temp_value = getFeatures( FFT_CH1, 33, 42, CH1_base_gamma1);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures( FFT_CH1, 43, 53, CH1_base_gamma2);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures( FFT_CH1, 54, 63, CH1_base_gamma3);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures( FFT_CH1, 64, 73, CH1_base_gamma4);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures( FFT_CH1, 74, 83, CH1_base_gamma5);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures( FFT_CH1, 84, 94, CH1_base_gamma6);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
                                     temp_value = 0.0;
 
 
@@ -1045,34 +1051,30 @@ namespace NFT_BLE_expert_
                                     string folderName2 = "immediate_data/CH2";
                                     string folderPath2 = Path.Combine(desktopPath, folderName2);
 
-                                    if (!Directory.Exists(folderPath2))
-                                    {
-                                        Directory.CreateDirectory(folderPath2);
-                                    }
+                                    //if (!Directory.Exists(folderPath2))
+                                    //{
+                                    //    Directory.CreateDirectory(folderPath2);
+                                    //}
 
-                                    string filePath2 = Path.Combine(folderPath2, fileName);
+                                    //string filePath2 = Path.Combine(folderPath2, fileName);
 
-                                    if (!Directory.Exists(folderPath2))
-                                    {
-                                        Directory.CreateDirectory(folderPath2);
-                                    }
+                                    //if (!Directory.Exists(folderPath2))
+                                    //{
+                                    //    Directory.CreateDirectory(folderPath2);
+                                    //}
 
-                                    temp_value = getFeatures(FFT_CH2, 8, 12, CH2_base_alpha);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 4, 7, CH2_base_theta);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 31, 40, CH2_base_gamma1);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 41, 50, CH2_base_gamma2);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 51, 58, CH2_base_gamma3);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 61, 70, CH2_base_gamma4);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 71, 80, CH2_base_gamma5);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
-                                    temp_value = getFeatures(FFT_CH2, 81, 90, CH2_base_gamma6);
-                                    using (StreamWriter writer = new StreamWriter(filePath2, true)) { writer.WriteLine(temp_value); }
+                                    temp_value = getFeatures(FFT_CH2, 33, 42, CH2_base_gamma1);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures(FFT_CH2, 43, 53, CH2_base_gamma2);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures(FFT_CH2, 54, 63, CH2_base_gamma3);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures(FFT_CH2, 64, 73, CH2_base_gamma4);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures(FFT_CH2, 74, 83, CH2_base_gamma5);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
+                                    temp_value = getFeatures(FFT_CH2, 84, 94, CH2_base_gamma6);
+                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,\n"); }
                                     temp_value = 0.0;
 
 
@@ -1525,6 +1527,10 @@ namespace NFT_BLE_expert_
             return msg;
         }
 
+
+
+
+
         private void label_enviroment_noise1_Click(object sender, EventArgs e)
         {
 
@@ -1586,30 +1592,26 @@ namespace NFT_BLE_expert_
         }
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            OpenStatus = true;
+            
             ///////baseline確保開關
             baseline_btn = false;
             ///////baseline特徵擷取
-            CH1_base_alpha = baselineAverage("CH1",8, 12);
-            CH1_base_theta = baselineAverage("CH1", 4, 7);
-            CH1_base_gamma1 = baselineAverage("CH1", 31, 40);
-            CH1_base_gamma2 = baselineAverage("CH1", 41, 50);
-            CH1_base_gamma3 = baselineAverage("CH1", 51, 58);
-            CH1_base_gamma4 = baselineAverage("CH1", 61, 70);
-            CH1_base_gamma5 = baselineAverage("CH1", 71, 80);
-            CH1_base_gamma6 = baselineAverage("CH1", 81, 90);
+            CH1_base_gamma1 = baselineAverage("CH1", 33, 42);
+            CH1_base_gamma2 = baselineAverage("CH1", 43, 53);
+            CH1_base_gamma3 = baselineAverage("CH1", 54, 63);
+            CH1_base_gamma4 = baselineAverage("CH1", 64, 73);
+            CH1_base_gamma5 = baselineAverage("CH1", 74, 83);
+            CH1_base_gamma6 = baselineAverage("CH1", 84, 94);
 
-            CH2_base_alpha = baselineAverage("CH2", 8, 12);
-            CH2_base_theta = baselineAverage("CH2", 4, 7);
-            CH2_base_gamma1 = baselineAverage("CH2", 31, 40);
-            CH2_base_gamma2 = baselineAverage("CH2", 41, 50);
-            CH2_base_gamma3 = baselineAverage("CH2", 51, 58);
-            CH2_base_gamma4 = baselineAverage("CH2", 61, 70);
-            CH2_base_gamma5 = baselineAverage("CH2", 71, 80);
-            CH2_base_gamma6 = baselineAverage("CH2", 81, 90);
+            CH2_base_gamma1 = baselineAverage("CH2", 33, 42);
+            CH2_base_gamma2 = baselineAverage("CH2", 43, 53);
+            CH2_base_gamma3 = baselineAverage("CH2", 54, 63);
+            CH2_base_gamma4 = baselineAverage("CH2", 64, 73);
+            CH2_base_gamma5 = baselineAverage("CH2", 74, 83);
+            CH2_base_gamma6 = baselineAverage("CH2", 84, 94);
             //////////////////////////////////////////////////////
 
-
+            OpenStatus = true;
             // trigger gopro
             string gopro_start = "http://10.5.5.9/gp/gpControl/command/shutter?p=1";
             HttpWebRequest request = HttpWebRequest.Create(gopro_start) as HttpWebRequest;
@@ -1826,5 +1828,61 @@ namespace NFT_BLE_expert_
             return result;
         }
         ////////////////////////////////////////////////////////////////////
+
+        ///NFFT
+        public static double[] ComputeFFT(float[] data, int nfft = 256)
+        {
+            // 確保輸入數據長度不超過 nfft
+            int dataLength = Math.Min(data.Length, nfft);
+
+            // 準備數據
+            Complex[] samples = new Complex[nfft];
+
+            // 應用漢明窗(Hamming window)
+            // 注意：對於 DC 分量，我們不應用窗函數
+            double dcSum = 0;
+            for (int i = 0; i < dataLength; i++)
+            {
+                dcSum += data[i];  // 計算平均值用於 DC 分量
+                double hammingWindow = 0.54 - 0.46 * Math.Cos(2 * Math.PI * i / (dataLength - 1));
+                samples[i] = new Complex(data[i] * hammingWindow, 0);
+            }
+
+            // 如果數據長度小於 nfft，將剩餘部分填充為0
+            for (int i = dataLength; i < nfft; i++)
+            {
+                samples[i] = new Complex(0, 0);
+            }
+
+            // 執行 FFT
+            Fourier.Forward(samples, FourierOptions.NoScaling);
+
+            // 計算頻譜，包括 DC 分量
+            double[] fftResult = new double[nfft / 2 + 1];  // +1 是為了包含 0Hz
+
+            // DC 分量 (0Hz)
+            fftResult[0] = Math.Abs(dcSum / dataLength);
+
+            // 其他頻率分量
+            for (int i = 0; i < nfft / 2; i++)
+            {
+                try
+                {
+                    // 計算幅度譜
+                    fftResult[i + 1] = 2.0 * (Math.Abs(Math.Sqrt(
+                        Math.Pow(samples[i].Real, 2) +
+                        Math.Pow(samples[i].Imaginary, 2)
+                    ))) / nfft;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"發生例外狀況：{e.Message}");
+                    fftResult[i + 1] = 0;
+                }
+            }
+
+            return fftResult;
+        }
+        //////////////////////////////////////////////
     }
 }
