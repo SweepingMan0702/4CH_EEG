@@ -78,6 +78,12 @@ namespace NFT_BLE_expert_
         private double CH2_base_gamma5;
         private double CH2_base_gamma6;
 
+        private double[] CH1_temp_value = new double[6];
+        private double[] CH2_temp_value = new double[6];
+        private double[] CH1_record_value = new double[6];
+        private double[] CH2_record_value = new double[6];
+
+
         private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         private string folderName = "immediate_data/data";
         private string folderPath;
@@ -1013,8 +1019,8 @@ namespace NFT_BLE_expert_
                                     }
 
 
-                                    
 
+                                    bool remove = false;
                                     string filePath = Path.Combine(folderPath, fileName);
                                     double temp_value = 0.0;
 
@@ -1030,65 +1036,54 @@ namespace NFT_BLE_expert_
                                         {
                                             writer.WriteLine("gamma1_cz,gamma2_cz,gamma3_cz,gamma4_cz,gamma5_cz,gamma6_cz,gamma1_fz,gamma2_fz,gamma3_fz,gamma4_fz,gamma5_fz,gamma6_fz");
                                         }
+
+                                        CH1_temp_value[0] = getFeatures(FFT_CH1, 33, 42, CH1_base_gamma1);
+                                        CH1_temp_value[1] = getFeatures(FFT_CH1, 43, 53, CH1_base_gamma2);
+                                        CH1_temp_value[2] = getFeatures(FFT_CH1, 54, 63, CH1_base_gamma3);
+                                        CH1_temp_value[3] = getFeatures(FFT_CH1, 64, 73, CH1_base_gamma4);
+                                        CH1_temp_value[4] = getFeatures(FFT_CH1, 74, 83, CH1_base_gamma5);
+                                        CH1_temp_value[5] = getFeatures(FFT_CH1, 84, 94, CH1_base_gamma6);
+
+                                        CH2_temp_value[0] = getFeatures(FFT_CH2, 33, 42, CH2_base_gamma1);
+                                        CH2_temp_value[1] = getFeatures(FFT_CH2, 43, 53, CH2_base_gamma2);
+                                        CH2_temp_value[2] = getFeatures(FFT_CH2, 54, 63, CH2_base_gamma3);
+                                        CH2_temp_value[3] = getFeatures(FFT_CH2, 64, 73, CH2_base_gamma4);
+                                        CH2_temp_value[4] = getFeatures(FFT_CH2, 74, 83, CH2_base_gamma5);
+                                        CH2_temp_value[5] = getFeatures(FFT_CH2, 84, 94, CH2_base_gamma6);
+                                        CH1_record_value = (double[])CH1_temp_value.Clone();
+                                        CH2_record_value = (double[])CH2_temp_value.Clone();
                                     }
 
-                                    temp_value = getFeatures( FFT_CH1, 33, 42, CH1_base_gamma1);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures( FFT_CH1, 43, 53, CH1_base_gamma2);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures( FFT_CH1, 54, 63, CH1_base_gamma3);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures( FFT_CH1, 64, 73, CH1_base_gamma4);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures( FFT_CH1, 74, 83, CH1_base_gamma5);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures( FFT_CH1, 84, 94, CH1_base_gamma6);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = 0.0;
+                                    CH1_temp_value[0] = getFeatures(FFT_CH1, 33, 42, CH1_base_gamma1);
+                                    CH1_temp_value[1] = getFeatures(FFT_CH1, 43, 53, CH1_base_gamma2);
+                                    CH1_temp_value[2] = getFeatures(FFT_CH1, 54, 63, CH1_base_gamma3);
+                                    CH1_temp_value[3] = getFeatures(FFT_CH1, 64, 73, CH1_base_gamma4);
+                                    CH1_temp_value[4] = getFeatures(FFT_CH1, 74, 83, CH1_base_gamma5);
+                                    CH1_temp_value[5] = getFeatures(FFT_CH1, 84, 94, CH1_base_gamma6);
 
+                                    CH2_temp_value[0] = getFeatures(FFT_CH2, 33, 42, CH2_base_gamma1);
+                                    CH2_temp_value[1] = getFeatures(FFT_CH2, 43, 53, CH2_base_gamma2);
+                                    CH2_temp_value[2] = getFeatures(FFT_CH2, 54, 63, CH2_base_gamma3);
+                                    CH2_temp_value[3] = getFeatures(FFT_CH2, 64, 73, CH2_base_gamma4);
+                                    CH2_temp_value[4] = getFeatures(FFT_CH2, 74, 83, CH2_base_gamma5);
+                                    CH2_temp_value[5] = getFeatures(FFT_CH2, 84, 94, CH2_base_gamma6);
+                                    //移除體動
+                                    for (int x = 0; x < CH1_temp_value.Length; x++) 
+                                    {
+                                        if (Math.Abs(CH1_temp_value[x] - CH1_record_value[x]) > 1) {remove = true;}
+                                        if (Math.Abs(CH2_temp_value[x] - CH2_record_value[x]) > 1) {remove = true;}
+                                    }
 
-                                    ///////////////////////////////////////////////////////////////////
-                                    string folderName2 = "immediate_data/CH2";
-                                    string folderPath2 = Path.Combine(desktopPath, folderName2);
+                                    if (remove == false) 
+                                    {
+                                        for (int k = 0; k < CH1_temp_value.Length; k++) {using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{CH1_temp_value[k]} ,"); }}
+                                        for (int g = 0; g < CH2_temp_value.Length -1; g++) {using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{CH2_temp_value[g]} ,"); }}
+                                        using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{CH2_temp_value[5]} \n"); }
+                                        CH1_record_value = (double[])CH1_temp_value.Clone();
+                                        CH2_record_value = (double[])CH2_temp_value.Clone();
+                                    }
 
-                                    //if (!Directory.Exists(folderPath2))
-                                    //{
-                                    //    Directory.CreateDirectory(folderPath2);
-                                    //}
-
-                                    //string filePath2 = Path.Combine(folderPath2, fileName);
-
-                                    //if (!Directory.Exists(folderPath2))
-                                    //{
-                                    //    Directory.CreateDirectory(folderPath2);
-                                    //}
-
-                                    temp_value = getFeatures(FFT_CH2, 33, 42, CH2_base_gamma1);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures(FFT_CH2, 43, 53, CH2_base_gamma2);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures(FFT_CH2, 54, 63, CH2_base_gamma3);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures(FFT_CH2, 64, 73, CH2_base_gamma4);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures(FFT_CH2, 74, 83, CH2_base_gamma5);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,"); }
-                                    temp_value = getFeatures(FFT_CH2, 84, 94, CH2_base_gamma6);
-                                    using (StreamWriter writer = new StreamWriter(filePath, true)) { writer.Write($"{temp_value} ,\n"); }
-                                    temp_value = 0.0;
-
-
-
-                                    // 打開文件並寫入接收到的數據
-                                    //using (StreamWriter writer = new StreamWriter(filePath2, true))
-                                    //{
-                                    //    for (int ii = 0; ii < FFT_CH2.Length; ii++)
-                                    //    {
-                                    //        writer.WriteLine(FFT_CH2[ii] * 1000000);
-                                    //        //Console.WriteLine(FFT_CH2[ii] * 1000000);
-                                    //    }
-                                    //}
-                                    /////////////////////////////////////////////////////////////////
+                                 /////////////////////////////////////////////////
                                 }
                                 if (filestatus == true) 
                                 {
@@ -1637,6 +1632,7 @@ namespace NFT_BLE_expert_
         {
             OpenStatus = false;
             baseline_btn = false;
+            filestatus = false;
             label_FileStatus.Text = "紀錄完成！可進行下一次紀錄...";
         }
 
