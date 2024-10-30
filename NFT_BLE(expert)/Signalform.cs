@@ -931,8 +931,8 @@ namespace NFT_BLE_expert_
                                 Buffer.BlockCopy(NFTBuffer_ch1, 0, NFTcal_ch1, 0, 4 * 250); // float  = 4 byte
                                 Buffer.BlockCopy(NFTBuffer_ch2, 0, NFTcal_ch2, 0, 4 * 250); // float  = 4 byte 
 
-                                FFT_CH1 = ComputeFFT(NFTcal_ch1,256);
-                                FFT_CH2 = ComputeFFT(NFTcal_ch2,256);
+                                FFT_CH1 = PlotFFT(NFTcal_ch1);
+                                FFT_CH2 = PlotFFT(NFTcal_ch2);
                      
                                 frequency_chart.Series[0].Values.Clear();
                                 frequency_chart.Series[1].Values.Clear();
@@ -1759,7 +1759,7 @@ namespace NFT_BLE_expert_
             List<double> fileAverages = new List<double>(); // 儲存每個檔案的平均值
 
             // 檢查檔案總數
-            if (files.Length < 300)
+            if (files.Length < 200)
             {
                 // 當檔案數小於25時，直接回傳1
                 return 1.0;
